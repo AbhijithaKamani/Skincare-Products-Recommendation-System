@@ -36,7 +36,7 @@ def classify_image(image_path):
     # Determine the predicted flower class and confidence score
     predicted_class_index = np.argmax(result)
     predicted_skin = skin_names[predicted_class_index]
-    confidence_score = (np.max(result) * 100 ) + 30.0
+    confidence_score = (np.max(result) * 100 )
 
     # Generate the outcome message
     outcome = f"The image belongs to {predicted_skin} with a confidence score of {confidence_score:.2f}%"
